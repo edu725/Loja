@@ -1,0 +1,15 @@
+{% load static %}
+{% for item in itens %}
+<div class="col-lg-4 " style="padding-top: 50px;">
+    <div class="card gallery-item h-100" style="width: 18rem;">
+        <img src="{{ item.path.url }}" class="img-fluid card-img-top" alt="{{ item.name }}">
+        <div class="card-body text-center" style="font-size: 20px;" >
+          <h1 class="card-title"><strong>{{item.name}}</strong></h1>
+          <b><strong>Preço: R${{item.price}}</strong></b>
+          <p class="card-text"><strong>{{item.descript}}</strong></p>
+          <a href="{% url 'visualizar_item' item.id %}" class="btn btn-primary">Visualizar</a>
+          <a href="{% url 'carrinho_item' %}" class="btn btn-primary">Adicionar ao carrinho</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
