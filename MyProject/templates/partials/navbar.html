@@ -1,26 +1,14 @@
 {% load static %}
-<nav class="navbar navbar-expand-lg bg" style="background-color: #3f49dd; padding-bottom: 30px; color: aliceblue;">
-    <div class="container-fluid">
-      <p  class="navbar-brand">
-        <h1 style="border-style: double; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif; padding: 10px; color: white;">
-          Moda & Estilo
-        </h1>
-      </p>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link cor" aria-current="page" href="#"><b style="margin-left: 40px;">Home</b></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link cor" href="#"><b style="margin-left: 40px;">Produtos</b></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link cor" href="#"><b style="margin-left: 40px;">Carrinho</b></a>
-          </li>
-        </ul>
-      </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="{% static 'assets/img/ncatalog.jpg' %}"  alt="Logo" width="200px" height="180px">
     </div>
-</nav>
+    <div class="col-md-4 text-center">
+      <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        Home
+      </h1>
+    </div>
+  </div>
+</div>
+

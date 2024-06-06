@@ -4,7 +4,11 @@ from myapp.views import *
 # Create your views here.
 
 urlpatterns = [
-    path("", index, name="index"),
+    path("home/", index, name="index"),
+    path('login/', login_view, name='login'),
+    path('logout/', logout_view, name='logout'),
+    path('signup/', signup_view, name='signup'),
+    path("ncatalog", spa, name="pagina"),
     path("itens/cadastrar/", create, name="criar_item"),
     path("itens/editar/<int:id>", edit, name="editar_item"),
     path("itens/atualizar/<int:id>", update, name="atualizar_item"),

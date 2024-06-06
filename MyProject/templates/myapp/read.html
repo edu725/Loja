@@ -5,13 +5,13 @@
 {% endblock %}
 {% block content %}
 <div class="container">
-  {%if item.path%}
-  <img src="{{item.path.url}}" alt="item.name" width="200px" height="200px">
+  {%if item.imagem%}
+  <img src="{{item.imagem.url}}" alt="item.titulo" width="200px" height="200px">
   {%endif%}
   <br>
-  <strong>Nome:</strong>{{item.name}}
+  <strong>Nome:</strong>{{item.titulo}}
   <br>
-  <strong>Descrição:</strong>{{item.descript}}
+  <strong>Descrição:</strong>{{item.descricao}}
   <a href="{% url 'editar_item' item.id %}" class="btn btn-warning">Editar</a>
   <a href="{% url 'deletar_item' item.id %}" class="btn btn-danger">Deletar</a>
 </div>  

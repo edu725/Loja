@@ -5,8 +5,8 @@
 {% endblock %}
 {% block content %}
 <div class="container">
-  {%if item.path%}
-  <img src="{{item.path.url}}" alt="item.name" width="200px" height="200px">
+  {%if item.imagem%}
+  <img src="{{item.imagem.url}}" alt="item.titulo" width="200px" height="200px">
   {%endif%}
 <form action="{% url 'atualizar_item' item.id %}" method="post" enctype="multipart/form-data">
   {% csrf_token %}
