@@ -2,10 +2,10 @@ from django import forms
 from django.forms import ModelForm
 from myapp.models import *
 
-class RoupaForm(forms.ModelForm):
+class LivroForm(forms.ModelForm):
     class Meta:
 
-        model =  Roupa
+        model =  Livro
         fields = "__all__"
         labels = {
             "titulo": "nome",

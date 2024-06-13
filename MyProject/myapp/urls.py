@@ -5,10 +5,7 @@ from myapp.views import *
 
 urlpatterns = [
     path("home/", index, name="index"),
-    path('login/', login_view, name='login'),
-    path('logout/', logout_view, name='logout'),
-    path('signup/', signup_view, name='signup'),
-    path("ncatalog", spa, name="pagina"),
+    path("nbook", spa, name="pagina"),
     path("itens/cadastrar/", create, name="criar_item"),
     path("itens/editar/<int:id>", edit, name="editar_item"),
     path("itens/atualizar/<int:id>", update, name="atualizar_item"),
